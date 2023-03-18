@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drastic.WatchdogInspector.Maui.MainPage">
+
+    <CollectionView ItemsSource="{Binding Items}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid ColumnSpacing="5" ColumnDefinitions="100, Auto">
+                    <Image Grid.Column="0" WidthRequest="100" HeightRequest="100" Source="{Binding ImageUrl}"/>
+                    <Grid RowDefinitions="Auto, Auto" RowSpacing="15" Grid.Column="1">
+                        <Label Grid.Row="0" Text="{Binding Text}" />
+                        <Label Grid.Row="1" Text="{Binding Time}" />
+                    </Grid>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

@@ -1,0 +1,3 @@
+[submodule "external/WatchdogInspector"]
+	path = external/WatchdogInspector
+	url = https://github.com/tapwork/WatchdogInspector.git
