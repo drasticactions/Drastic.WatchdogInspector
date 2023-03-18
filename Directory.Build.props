@@ -27,9 +27,9 @@
 
 	<PropertyGroup>
 		<Authors>$(Company)</Authors>
-		<PackageTags>ios tvos macos layout</PackageTags>
-		<PackageProjectUrl>https://github.com/drasticactions/Drastic.Masonry</PackageProjectUrl>
-		<PackageReleaseNotes>https://github.com/drasticactions/Drastic.Masonry/blob/main/CHANGELOG.md</PackageReleaseNotes>
+		<PackageTags>ios tvos ui diagnostics watchdog inspector</PackageTags>
+		<PackageProjectUrl>https://github.com/drasticactions/Drastic.WatchdogInspector</PackageProjectUrl>
+		<PackageReleaseNotes>https://github.com/drasticactions/Drastic.WatchdogInspector/blob/main/CHANGELOG.md</PackageReleaseNotes>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>favicon.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -37,7 +37,7 @@
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<DebugType>embedded</DebugType>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<CompressBindingResourcePackage>false</CompressBindingResourcePackage>
 	</PropertyGroup>
 	
