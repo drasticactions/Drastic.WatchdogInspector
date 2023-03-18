@@ -4,7 +4,7 @@ PROJECT_ROOT=$(ROOT)/../external/WatchdogInspector/WatchdogInspector
 PROJECT=$(PROJECT_ROOT)/WatchdogInspector.xcodeproj
 BUILD_ROOT=$(PROJECT_ROOT)/build
 TARGET_IOS="WatchdogInspector"
-TARGET_MAC="WatchdogInspector-tvOS"
+TARGET_TVOS="WatchdogInspector-tvOS"
 PROJECTNAME=WatchdogInspector
 OUTPUT=$(ROOT)/Build
 FRAMEWORK_PATH=Products/Library/Frameworks/WatchdogInspector.framework
@@ -30,10 +30,10 @@ maccatalyst:
 	$(XBUILD) archive ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -scheme $(TARGET_IOS) -destination "generic/platform=macOS,variant=Mac Catalyst,name=Any Mac" -archivePath $(BUILD_ROOT)/catalyst.xcarchive SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 tvossimulator:
-	$(XBUILD) archive ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -scheme $(TARGET_IOS) -archivePath $(BUILD_ROOT)/tvsimulator.xcarchive -sdk appletvsimulator SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+	$(XBUILD) archive ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -scheme $(TARGET_TVOS) -archivePath $(BUILD_ROOT)/tvsimulator.xcarchive -sdk appletvsimulator SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 tvosdevice:
-	$(XBUILD) archive ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -scheme $(TARGET_IOS) -archivePath $(BUILD_ROOT)/tvos.xcarchive -sdk appletvos SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+	$(XBUILD) archive ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -scheme $(TARGET_TVOS) -archivePath $(BUILD_ROOT)/tvos.xcarchive -sdk appletvos SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 xcframework:
 	rm -rf $(BUILD_ROOT)/$(PROJECTNAME).xcframework
