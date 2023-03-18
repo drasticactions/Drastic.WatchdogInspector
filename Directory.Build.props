@@ -37,8 +37,8 @@
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<DebugType>embedded</DebugType>
-		<Version>1.0.1</Version>
-		<CompressBindingResourcePackage>false</CompressBindingResourcePackage>
+		<Version>1.0.3</Version>
+		<CompressBindingResourcePackage>true</CompressBindingResourcePackage>
 	</PropertyGroup>
 	
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
